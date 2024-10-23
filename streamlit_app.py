@@ -14,7 +14,7 @@ with st.sidebar:
    # Initialize the variable outside the if-else block
 
    if 'UBIOPS_API_TOKEN' in st.secrets:
-       st.success('API key already provided!', icon='')
+       st.success('API key already provided!')
        ubiops_api_token = st.secrets['UBIOPS_API_TOKEN']
    else:
        ubiops_api_token = st.text_input('Enter UbiOps API token:', type='password')
