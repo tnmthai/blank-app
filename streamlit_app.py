@@ -4,7 +4,7 @@ import os
 
 # App title
 
-st.set_page_config(page_title=" Llama 3 Chatbot yhct")
+st.set_page_config(page_title=" Llama 3 Chatbot Assistent")
 
 # Replicate Credentials
 
@@ -15,7 +15,7 @@ with st.sidebar:
 
    if 'UBIOPS_API_TOKEN' in st.secrets:
        st.success('API key already provided!', icon='')
-       ubiops_api_token = st.secrets['Token 15f884aa3afb35dbd59c39280c6629b1725dd6f3']
+       ubiops_api_token = st.secrets['UBIOPS_API_TOKEN']
    else:
        ubiops_api_token = st.text_input('Enter UbiOps API token:', type='password')
 
